@@ -129,7 +129,11 @@ if not os.path.exists(DB_NAME):
     insert_data(cse_df, 'cse_faculty')
     insert_data(it_df, 'it_faculty')
 
-st.title("💡 SME Tech Guru: Find Your Expert Mentor! 💡")
+# --- Branding ---
+st.write("## Agile Assembly proudly presents:")
+st.title("💡 SME Tech Guru 💡")
+st.markdown("### *A Prince Campus Company*") # Motto
+
 st.markdown("""
 Welcome, students! This app helps you find the perfect faculty member for your research doubts and project assistance.
 Simply enter a technology or research area you're interested in, and we'll show you the experts!
@@ -137,6 +141,49 @@ Simply enter a technology or research area you're interested in, and we'll show 
 
 st.markdown("---")
 
+st.markdown('''these are the key word to use:
+Deep Learning
+Augmented Reality/Virtual Reality
+Deep Learning
+Data Structure
+Robotics
+Cloud computing Big data analytics
+Artificial intelligence
+Big data analytics
+Cyber Security
+Data mining
+Data science
+Big data Analytics
+Cryptography and network security
+Artificial Intelligence
+Software Testing
+Cloud computing
+Cryptography and network security
+Cyber Security
+Cloud Computing and Big Data Analytics
+Artificial Intelligence and Machine learning
+Cryptography and network security
+Networks
+Wireless sensor networks
+Machine learning, Artificial Intelligence
+Networks, Internet of things
+Cloud Computing
+Network Security
+Artificial Intelligence
+Artificial Intelligence and Big Data
+Machine learning, Wireless networks
+Machine learning, Artificial intelligence
+Compiler networks, Cloud computing
+Cyber security, block chain technology
+Bio informatics, AR/VR
+Wireless networks, AR/VR
+Wireless networks, image processing
+Cloud Computing, Big Data Analytics
+Data Base Management System
+Artificial Intelligence, Network security
+Data Mining
+Machine learning
+Image Processing''')
 # User Input
 search_query = st.text_input("Enter the Technology/Specialization (e.g., Machine Learning, Cybersecurity, Networks):", "").lower().strip()
 filter_currently_teaching = st.checkbox("Show only faculty currently teaching in their specialization", value=True)
